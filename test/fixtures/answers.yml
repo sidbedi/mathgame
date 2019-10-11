@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  operand1: 1
+  operation: MyString
+  operand2: 1
+  correct: false
+  seconds: 1
+
+two:
+  user_id: 1
+  operand1: 1
+  operation: MyString
+  operand2: 1
+  correct: false
+  seconds: 1

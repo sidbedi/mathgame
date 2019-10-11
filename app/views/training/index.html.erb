@@ -2,10 +2,12 @@
 <p>Find me in app/views/training/index.html.erb</p>
 
 <% flash.each do |key, value| %>
-   <div class="alert alert-<%= key %>"><%= value %></div><br />
+   <div class="alert alert-<%= key %>"><%= value.html_safe %></div><br />
 <% end %>
 <%=@question.question_string%> =
 <%= form_with(:url=>'/training/index',  :local => true) do %>
   <%= text_field_tag(:my_answer) %>
   <%= submit_tag("submit") %>
 <% end %>
+
+<a href='/training/index?operation=+'>+</a>  <a href='/training/index?operation=-'>-</a>  <a href='/training/index?operation=*'>*</a>  <a href='/training/index?operation=/'>/</a> 

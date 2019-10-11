@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @answer.user_id %>
+</p>
+
+<p>
+  <strong>Operand1:</strong>
+  <%= @answer.operand1 %>
+</p>
+
+<p>
+  <strong>Operation:</strong>
+  <%= @answer.operation %>
+</p>
+
+<p>
+  <strong>Operand2:</strong>
+  <%= @answer.operand2 %>
+</p>
+
+<p>
+  <strong>Correct:</strong>
+  <%= @answer.correct %>
+</p>
+
+<p>
+  <strong>Seconds:</strong>
+  <%= @answer.seconds %>
+</p>
+
+<%= link_to 'Edit', edit_answer_path(@answer) %> |
+<%= link_to 'Back', answers_path %>
