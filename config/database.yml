@@ -1,0 +1,21 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: mathgame
+  pool: 5
+  username: root
+  password: to_th3_m00N
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: mathgame
+  pool: 5
+  username: root
+  password: to_th3_m00N
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: mathgame
+  pool: 5
+  username: root
+  password: to_th3_m00N
